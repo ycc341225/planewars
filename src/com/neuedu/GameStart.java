@@ -2,6 +2,7 @@ package com.neuedu;
 
 
 import com.neuedu.main.GameFrame;
+import com.neuedu.util.DataStore;
 
 /**
  * 游戏的启动类
@@ -9,7 +10,9 @@ import com.neuedu.main.GameFrame;
 public class GameStart {
 
     public static void main(String[] args) {
-        new GameFrame().init();     //初始化
+        GameFrame gameFrame = new GameFrame();     //初始化
+        DataStore.put("gameFrame",gameFrame);
+        gameFrame.init();
     }
 
 }

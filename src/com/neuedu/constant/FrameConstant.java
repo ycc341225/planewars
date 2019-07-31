@@ -6,4 +6,7 @@ package com.neuedu.constant;
 public class FrameConstant {
     public static final int FRAME_WIDTH = 800;  //窗口的宽
     public static final int FRAME_HEIGHT = 700; //窗口的高
+
+    public static final int GAME_SPEED = 1;
+
 }
